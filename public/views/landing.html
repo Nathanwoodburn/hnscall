@@ -73,7 +73,11 @@
                                             HNS Talk
                                         </h1>
                                         <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="300">
-                                            Start or join a call below.
+                                            Start or join a call below.<br>
+                                            Pick a name (or use the random one).<br>
+                                            Each room has its disposable URL.<br>
+                                            Share the URL. Start your conference.<br>
+                                            It's that easy.
                                         </p>
                                     </div>
                                     <style>
@@ -129,7 +133,11 @@
                                                 }
                                             };
                                             function genRoom() {
-                                                document.getElementById('roomName').value = getUUID4();
+                                                let adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+                                                let noun = nouns[Math.floor(Math.random() * nouns.length)];
+                                                document.getElementById('roomName').value = getRandomNumber(5) + 
+                                                noun.charAt(0).toUpperCase() + noun.substring(1) +
+                                                adjective.charAt(0).toUpperCase() + adjective.substring(1);
                                             }
                                             function getUUID4() {
                                                 return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
