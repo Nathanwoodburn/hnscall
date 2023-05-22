@@ -3,8 +3,8 @@
     "name": "HNSCALL: P2P Video Call on Handshake",
     "icons": [
       {
-        "src": "/images/logo.svg",
-        "type": "image/svg+xml",
+        "src": "/images/logo.png",
+        "type": "image/png",
         "sizes": "383x400"
       }
     ],
@@ -20,7 +20,7 @@
         "short_name": "New Call",
         "description": "Create a new call",
         "url": "/join/pwacall",
-        "icons": [{ "src": "/images/logo.svg", "sizes": "383x400" }]
+        "icons": [{ "src": "/images/logo.png", "sizes": "512x512" }]
       }
     ],
     "description": "HNSCALL: P2P Video Call on Handshake"
