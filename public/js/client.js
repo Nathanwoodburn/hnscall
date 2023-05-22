@@ -115,7 +115,8 @@ const icons = {
     fileReceive: '<i class="fas fa-file-import"></i>',
 };
 
-const myRoomUrl = window.location.href;
+// const myRoomUrl = window.location.href;
+const myRoomUrl = window.location.href.replace('hnscall/join/', 'hcall/');
 
 // Local Storage class
 const lS = new LocalStorage();
