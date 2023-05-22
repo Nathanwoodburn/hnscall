@@ -4332,7 +4332,7 @@ function makeRoomQR() {
  * Copy Room URL to clipboard
  */
 function copyRoomURL() {
-    let roomURL = window.location.href;
+    let roomURL = window.location.href.replace('hnscall/join/', 'hcall/')
     let tmpInput = document.createElement('input');
     document.body.appendChild(tmpInput);
     tmpInput.value = roomURL;
