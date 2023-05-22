@@ -5,12 +5,12 @@
       {
         "src": "/images/logo.svg",
         "type": "image/svg+xml",
-        "sizes": "512x512"
+        "sizes": "383x400"
       }
     ],
     "id": "/?source=pwa",
     "start_url": "/?source=pwa",
-    "background_color": "#00000",
+    "background_color": "black",
     "display": "standalone",
     "scope": "/",
     "theme_color": "#6b4080",
@@ -20,7 +20,7 @@
         "short_name": "New Call",
         "description": "Create a new call",
         "url": "/join/pwacall",
-        "icons": [{ "src": "/images/logo.svg", "sizes": "192x192" }]
+        "icons": [{ "src": "/images/logo.svg", "sizes": "383x400" }]
       }
     ],
     "description": "HNSCALL: P2P Video Call on Handshake"
