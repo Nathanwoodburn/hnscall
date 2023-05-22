@@ -1,6 +1,6 @@
 {
     "short_name": "HNSCALL",
-    "name": "HNSCALL: P2P Video Call on Handshake",
+    "name": "HNSCALL",
     "icons": [
       {
         "src": "/images/logo.png",
@@ -8,8 +8,8 @@
         "sizes": "512x512"
       }
     ],
-    "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "id": "/",
+    "start_url": "/",
     "background_color": "black",
     "display": "standalone",
     "scope": "/",
@@ -23,11 +23,5 @@
         "icons": [{ "src": "/images/logo.png", "sizes": "512x512" }]
       }
     ],
-    "description": "HNSCALL: P2P Video Call on Handshake",
-    "protocol_handlers": [
-      {
-        "protocol": "web+hnscall",
-        "url": "/%s"
-      }
-    ]
+    "description": "HNSCALL: P2P Video Call on Handshake"
   }
