@@ -13,15 +13,15 @@ def redirector():
         return redirect('https://hnscall/join/'+request.path[1:])
     
     # Else get all subdomain parts
-    subdomain = ""
+    subdomain = "_hnscall"
     for part in request.host.split('.')[:-1]:
         subdomain += part + '.'
     
     try:
         # Run dig to get the IP address of the subdomain
         dig = subprocess.run(['dig', '@152.69.186.119', '-p', '5350', subdomain, 'TXT'], capture_output=True, text=True)
-        # Get the value of the TXT with HNSCALL=<data>
-        hns_call = re.search(r'HNSCALL=(.*)', dig.stdout)
+        # Get the value of the TXT record
+        hns_call = re.search(r'\"(.*)\"', dig.stdout)
         #If the TXT record exists, redirect to the path
         if hns_call:
             return redirect('https://hnscall/join/'+hns_call.group(1).split('"')[0])

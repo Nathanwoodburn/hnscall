@@ -6,7 +6,7 @@ You can create your own link to your room by setting a TXT record on your TLD or
 For example to create a link from http://nathan.woodburn.hcall to room "woodburn", 
 you would set the following TXT record on the domain "nathan.woodburn."
 ```
-nathan.woodburn. 3600 IN TXT "HNSCALL=woodburn"
+_hnscall.nathan.woodburn. 3600 IN TXT "woodburn"
 ```
 
 After adding this TXT record, you can visit http://nathan.woodburn.hcall to join the room "woodburn".
