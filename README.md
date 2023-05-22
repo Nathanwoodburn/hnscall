@@ -1,3 +1,20 @@
+# Short Link (Path Only)
+You can use the short link https://hcall/\<room\> in place of https://hcall/join/\<room\> to join a room.
+
+# Custom link (HNS Domain)
+You can create your own link to your room by setting a TXT record on your TLD or SLD.  
+For example to create a link from http://nathan.woodburn.hcall to room "woodburn", 
+you would set the following TXT record on the domain "nathan.woodburn."
+```
+nathan.woodburn. 3600 IN TXT "HNSCALL=woodburn"
+```
+
+After adding this TXT record, you can visit http://nathan.woodburn.hcall to join the room "woodburn".
+
+
+<br><br><br><br><br><br>
+<!-- Info from MiroTalk Origin -->
+# Info from MiroTalk Origin
 # <p align="center">MiroTalk P2P</p>
 
 <p align="center">Free WebRTC - P2P - Simple, Secure, Fast Real-Time Video Conferences Up to 4k and 60fps, compatible with all browsers and platforms.</p>
