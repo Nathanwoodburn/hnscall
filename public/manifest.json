@@ -23,5 +23,11 @@
         "icons": [{ "src": "/images/logo.png", "sizes": "512x512" }]
       }
     ],
-    "description": "HNSCALL: P2P Video Call on Handshake"
+    "description": "HNSCALL: P2P Video Call on Handshake",
+    "protocol_handlers": [
+      {
+        "protocol": "web+hnscall",
+        "url": "/%s"
+      }
+    ]
   }
