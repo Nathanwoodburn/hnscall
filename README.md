@@ -1,5 +1,5 @@
 # Short Link (Path Only)
-You can use the short link https://hcall/\<room\> in place of https://hcall/join/\<room\> to join a room.
+You can use the short link https://hcall/<room\> in place of https://hnscall/join/<room\> to join a room.
 
 # Custom link (HNS Domain)
 You can create your own link to your room by setting a TXT record on your TLD or SLD.  
@@ -10,6 +10,17 @@ _hnscall.nathan.woodburn. 3600 IN TXT "woodburn"
 ```
 
 After adding this TXT record, you can visit http://nathan.woodburn.hcall to join the room "woodburn".
+
+
+# HNSChat
+HNSChat is a simple chat application that uses Handshake domains for usernames.  
+You can create a HNSCall room and chat with other users from HNSChat.  
+To do this simply use the following commands:  
+
+- .call: Create a new HNSCall room link using your HNSChat domain as the room code.
+  - .hcall: Same as .call
+  - .hnscall: Same as .call
+- .channel: Create a new HNSChat channel using the current HNSCHAT channel as the room code.
 
 
 <br><br><br><br><br><br>
